@@ -1,6 +1,6 @@
 {
   "name": "sortable-react",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Sortable-ReactUnder the React framework, based on the React component under TypeScript syntax, hook functions are used to handle, Drag responds to events, and drag and sort Doms.",
   "main": "index.tsx",
   "type": "module",

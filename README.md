@@ -1,4 +1,4 @@
-# sortable-react
+# sortable-react &nbsp; [![npm](./readme/version.svg)](https://www.npmjs.com/package/sortable-react)
 
 [Demo](https://raw.githubusercontent.com/Timtance/sortable-react/HEAD/readme/demo.mp4) | [npm](https://www.npmjs.com/package/sortable-react)
 
@@ -6,7 +6,7 @@
 
 [Sortable-React](https://github.com/Timtance/sortable-react) Under the React framework, based on the React component under TypeScript syntax, hook functions are used to handle, Drag responds to events, and drag and sort Doms.
 
-V1.1.3 starts in its simplest form. If you need rich interaction, please download a higher version.
+version starts in its simplest form. If you need rich interaction, please download a higher version.
 
 ### Why do we need to do this?
 
