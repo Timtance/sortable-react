@@ -1,7 +1,7 @@
 {
   "name": "sortable-react",
-  "version": "1.0.0",
-  "description": "This is a great thin packaging for SortableJS libraries. A solution based on React. Draggable. This packaging attempts to make you as close to being sortable as possible.",
+  "version": "1.1.1",
+  "description": "Sortable-ReactUnder the React framework, based on the React component under TypeScript syntax, hook functions are used to handle, Drag responds to events, and drag and sort Doms.",
   "main": "index.tsx",
   "type": "module",
   "scripts": {
@@ -9,12 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Timtance"
+    "url": "https://github.com/Timtance/sortable-react"
   },
   "keywords": [
     "sortable"
   ],
-  "author": "txh_tui_tance",
+  "author": {
+    "email": "txhtui@gmail.com",
+    "name": "Tuxiaohua (Tui-Tance)",
+    "url": "https://github.com/Timtance"
+  },
   "license": "ISC",
   "dependencies": {
     "less-loader": "^11.1.0",
