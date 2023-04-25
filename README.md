@@ -1,12 +1,12 @@
 # sortable-react
 
-[Demo](https://www.npmjs.com/package/sortable-react/readme/demo.mp4) | [npm](https://www.npmjs.com/package/sortable-react)
+[Demo](https://raw.githubusercontent.com/Timtance/sortable-react/HEAD/readme/demo.mp4) | [npm](https://www.npmjs.com/package/sortable-react)
 
-![MP4 of the demo being used](./readme/demo.mp4)
+![gif of the demo being used](./readme/demo.gif)
 
-[Sortable-React](https://github.com/Timtance/sortable-react)Under the React framework, based on the React component under TypeScript syntax, hook functions are used to handle, Drag responds to events, and drag and sort Doms.
+[Sortable-React](https://github.com/Timtance/sortable-react) Under the React framework, based on the React component under TypeScript syntax, hook functions are used to handle, Drag responds to events, and drag and sort Doms.
 
-V1.0.0 starts in its simplest form. If you need rich interaction, please download a higher version.
+V1.1.3 starts in its simplest form. If you need rich interaction, please download a higher version.
 
 ### Why do we need to do this?
 
@@ -87,3 +87,7 @@ Run `yarn` to install dependencies
 ### Recommended IDE Setup
 
 - [VS Code](https://code.visualstudio.com/)
+
+
+### Follow
+<img src="https://raw.githubusercontent.com/Timtance/tuijs/HEAD/follow.jpg" width="100px">
