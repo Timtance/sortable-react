@@ -1,6 +1,6 @@
-# SortableJS-react
+# sortable-react
 
-[Demo](https://www.npmjs.com/package/sortablejs-react/readme/demo.mp4) | [npm](https://www.npmjs.com/package/sortablejs-react)
+[Demo](https://www.npmjs.com/package/sortable-react/readme/demo.mp4) | [npm](https://www.npmjs.com/package/sortable-react)
 
 ![MP4 of the demo being used](./readme/demo.mp4)
 
@@ -27,19 +27,19 @@ You can see
 1. Install the package:
 
 ```bash
-yarn add sortablejs-react
+yarn add sortable-react
 ```
 
 or
 
 ```bash
-npm install sortablejs-react
+npm install sortable-react
 ```
 
 2. Import the component in your `<script setup>` (or `<script>`):
 
 ```typescript
-import { Sortable } from "sortablejs-react";
+import { Sortable } from "sortable-react";
 ```
 
 3. Use the component:
