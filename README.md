@@ -49,6 +49,21 @@ return (
 <>
     <Sortable
       parameter={['标签1'，'标签2']}
+      config={
+        {
+          class:'',
+          style:{
+            flexDirection:'column'
+          },
+          child:{
+            class:'',
+            style:{
+              width:'100%',
+              height:'50px',
+            }
+          }
+        }
+      }
     >
     </Sortable>
 </>

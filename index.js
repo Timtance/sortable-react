@@ -1,12 +1,12 @@
 import { useMount } from "ahooks";
 import { useCallback, useMemo, useRef, useState } from "react";
-import styles from './index.less';
-const insertBefore = ( list:string[], from:any, to:any)=> {
+import styles from './index.css';
+const insertBefore = ( list, from, to)=> {
   if(from && to && from != to){
     const _copy = JSON.parse(JSON.stringify(list));
     let _formIndex = _copy.indexOf(from);
     let _newToIndex = _copy.indexOf(to);
-    let _way:number = _newToIndex > _formIndex ? 1 : -1;
+    let _way = _newToIndex > _formIndex ? 1 : -1;
     _copy.splice(_formIndex, 1);
     _newToIndex = _copy.indexOf(to);
     ( _newToIndex == 0 && _way == -1) && (_way = 0)
@@ -16,20 +16,20 @@ const insertBefore = ( list:string[], from:any, to:any)=> {
   return null;
 };
 
-export default function Sortable(props: any){
-  const {parameter} = props;
+export default function Sortable(props){
+  const {parameter, config} = props;
   const dataList = useMemo(() => parameter, [parameter]);
-  const [listData, setListData] = useState<any>([]);
-  const dragItemRef = useRef<any>(null);
-  const dropAreaRef = useRef<HTMLDivElement>(null);
+  const [listData, setListData] = useState([]);
+  const dragItemRef = useRef(null);
+  const dropAreaRef = useRef(null);
   useMount(() => {
     setListData(dataList);
   });
-  const handleDragStart = (e: React.DragEvent<HTMLLIElement>, data: any) => {
+  const handleDragStart = (e, data) => {
     dragItemRef.current = data;
     let _el = dropAreaRef.current?.querySelector(`[data-id="${data}"]`);
     if(_el){
-      _el.classList.add(styles.draggingItem)
+      _el.classList.add("draggingItem")
     }
   };
   const handleDragEnd = useCallback(() => {
@@ -37,7 +37,7 @@ export default function Sortable(props: any){
     if(_data){
       let _el = dropAreaRef.current?.querySelector(`[data-id="${_data}"]`);
       if(_el){
-        _el.classList.remove(styles.draggingItem)
+        _el.classList.remove("draggingItem")
       }
       dragItemRef.current = undefined;
     }
@@ -49,17 +49,20 @@ export default function Sortable(props: any){
       _ordered && setListData(_ordered);
     }
   }, [listData]);
-  const handleDragOver = useCallback((e: React.DragEvent<HTMLDivElement>) => {
+  const handleDragOver = useCallback((e) => {
     e.preventDefault();
-    let _target:any = e.target;
+    let _target = e.target;
     updateList(e.clientX, e.clientY, _target.getAttribute("data-id"));
   }, [listData]);
 
   return(
-    <div  ref={dropAreaRef} onDragEnd={handleDragEnd} onDragOver={handleDragOver}>
-      <ul className={styles.dataList}>
-        {listData.map((item: any) => (
+    <div class="tuiSortableReact" ref={dropAreaRef} onDragEnd={handleDragEnd} onDragOver={handleDragOver}>
+      <ul class="tuiSortableReact-dataList" 
+          style={config&&config.style}>
+        {listData.map((item) => (
           <li
+          class="tuiSortableReact-li"
+          style={config&&config.child&&config.child.style}
           draggable
           data-id={item}
           onDragStart={(e)=>handleDragStart(e, item)}

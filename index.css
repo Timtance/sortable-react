@@ -1,0 +1,23 @@
+.tuiSortableReact{
+  color: #545454;
+}
+.tuiSortableReact .draggingItem{
+  border: dashed 1px red !important;
+}
+.tuiSortableReact .tuiSortableReact-dataList{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  border: solid 1px rgba(255,255,255,0.1);
+  padding: 0;
+}
+.tuiSortableReact .tuiSortableReact-dataList>li.tuiSortableReact-li{
+  height: 50px;
+  width: 200px;
+  display: inline-flex;
+  margin: 0;
+  border: solid 1px rgba(255,255,255,0.1);
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
